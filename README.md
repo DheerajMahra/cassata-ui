@@ -1,4 +1,4 @@
-# Cassata
+# cassata-ui
 
 <p align="left">
   <a href="#">

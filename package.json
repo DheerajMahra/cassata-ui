@@ -1,5 +1,5 @@
 {
-  "name": "cassata",
+  "name": "cassata-ui",
   "version": "0.0.0",
   "description": "A sweet set of components for your React ecosystem",
   "type": "module",
@@ -14,7 +14,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DheerajMahra/cassata.git"
+    "url": "git+https://github.com/DheerajMahra/cassata-ui.git"
   },
   "files": [
     "dist"
@@ -23,7 +23,7 @@
     "design system",
     "component library",
     "design language system",
-    "cassata",
+    "cassata-ui",
     "react components"
   ],
   "exports": {
