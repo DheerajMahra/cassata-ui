@@ -12,14 +12,28 @@
   },
   "author": "Dheeraj Mahra <dheerajmahra873@gmail.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DheerajMahra/cassata.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "design system",
+    "component library",
+    "design language system",
+    "cassata",
+    "react components"
+  ],
   "exports": {
     "./components": {
-      "types": "./lib/components/index.d.ts",
-      "default": "./lib/components/index.js"
+      "types": "./dist/components/index.d.ts",
+      "default": "./dist/components/index.js"
     },
     "./tokens": {
-      "types": "./lib/tokens/index.d.ts",
-      "default": "./lib/tokens/index.js"
+      "types": "./dist/tokens/index.d.ts",
+      "default": "./dist/tokens/index.js"
     }
   },
   "peerDependencies": {
