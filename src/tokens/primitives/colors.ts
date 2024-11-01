@@ -12,8 +12,10 @@ export type ColorScale = Readonly<{
 }>;
 
 export type Colors = Readonly<{
-  white: ColorScale;
-  black: ColorScale;
+  white: string;
+  black: string;
+  grey: ColorScale;
+  slate: ColorScale;
   blue: ColorScale;
   red: ColorScale;
   orange: ColorScale;
@@ -21,29 +23,31 @@ export type Colors = Readonly<{
 }>;
 
 export const colors: Colors = {
-  white: {
-    50: "#D0D0D0",
-    100: "#E0E0E0",
-    200: "#F0F0F0",
-    300: "#FFFFFF",
-    400: "#FFFFFF",
-    500: "#FFFFFF",
-    600: "#FFFFFF",
-    700: "#FFFFFF",
-    800: "#FFFFFF",
-    900: "#FFFFFF"
-  },
-  black: {
-    50: "#E5E5E5",
-    100: "#CCCCCC",
-    200: "#B3B3B3",
-    300: "#999999",
-    400: "#808080",
-    500: "#666666",
-    600: "#4D4D4D",
+  white: "#FFFFFF",
+  black: "#000000",
+  grey: {
+    50: "#FAFAFA",
+    100: "#F5F5F5",
+    200: "#EFEFEF",
+    300: "#DDDDDD",
+    400: "#9A9A9A",
+    500: "#777777",
+    600: "#666666",
     700: "#333333",
-    800: "#1A1A1A",
-    900: "#000000"
+    800: "#262626",
+    900: "#171717"
+  },
+  slate: {
+    50: "#F9F9FA",
+    100: "#F5F5F7",
+    200: "#EFEFF2",
+    300: "#DCDDE2",
+    400: "#989CA3",
+    500: "#74777D",
+    600: "#62676E",
+    700: "#303236",
+    800: "#242629",
+    900: "#151619"
   },
   blue: {
     50: "#F7F8FD",

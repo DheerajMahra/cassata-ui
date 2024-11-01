@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "git:commit": "cz",
-    "build": "tsup --config ./tsup.config.ts",
+    "build": "NODE_ENV=production tsup --config ./tsup.config.ts",
+    "build:dev": "NODE_ENV=development tsup --config ./tsup.config.ts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepare": "husky install"

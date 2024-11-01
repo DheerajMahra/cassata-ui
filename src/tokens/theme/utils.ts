@@ -1,12 +1,9 @@
-import { Theme } from "./types";
-import { lightTheme } from "./light";
-import { darkTheme } from "./dark";
-
-type Themes = Record<Theme, {}>;
+import { baseTheme } from "./base";
+import { ThemeName, Themes } from "./types";
 
 const themes: Themes = {
-  light: lightTheme,
-  dark: darkTheme
+  base: baseTheme
 };
 
-export const getThemeSemanticTokens = (theme: Theme) => themes[theme];
+export const getThemeSemanticTokens = (themeName: ThemeName) =>
+  themes[themeName];

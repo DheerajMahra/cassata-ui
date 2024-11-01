@@ -1,24 +1,20 @@
-import React, { createContext, useContext, useMemo } from "react";
+import React, { useMemo } from "react";
+import {
+  ThemeProvider as StyledThemeProvider,
+  useTheme
+} from "styled-components";
 import { getThemeSemanticTokens } from "@tokens/theme";
-import type { Theme } from "@tokens/theme";
+import type { ThemeName } from "@tokens/theme";
 
-export type Props = {
+type Props = {
   children: React.ReactNode;
-  theme?: Theme;
+  theme?: ThemeName;
 };
 
-const ThemeContext = createContext({});
+const ThemeProvider = ({ children, theme: themeName = "base" }: Props) => {
+  const theme = useMemo(() => getThemeSemanticTokens(themeName), []);
 
-export const ThemeProvider = ({
-  children,
-  theme: themeName = "light"
-}: Props) => {
-  const theme = getThemeSemanticTokens(themeName);
-  const value = useMemo(() => ({ theme }), [theme]);
-
-  return (
-    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
-  );
+  return <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>;
 };
 
-export const useTheme = () => useContext(ThemeContext);
+export { ThemeProvider, useTheme };

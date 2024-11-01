@@ -1,2 +1,2 @@
-export type { Theme } from "./types";
 export { getThemeSemanticTokens } from "./utils";
+export * from "./types";
