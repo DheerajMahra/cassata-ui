@@ -1,7 +1,8 @@
 import { Options, defineConfig } from "tsup";
 
+const ENV = process.env.NODE_ENV;
 const outDir = "dist";
-const sourceMap = false;
+const sourceMap = ENV === "development";
 
 /**
  * Need to experiment how customisable tsup is with build options
@@ -11,7 +12,7 @@ const sourceMap = false;
 export default defineConfig((options: Options) => {
   return [
     {
-      entry: ["src/components/**/*.ts?(x)"],
+      entry: ["src/components/**/*.ts?(x)", "!./**/*.stories.*"],
       outDir: `${outDir}/components`,
       format: ["esm"],
       target: "es2015",
@@ -20,12 +21,11 @@ export default defineConfig((options: Options) => {
       dts: true,
       treeshake: true,
       minify: true,
-      ignoreWatch: ["**/*.stories.*"],
       clean: true,
-      external: ["*.stories.tsx", "react", "react-dom"]
+      ignoreWatch: ["**/*.stories.*"]
     },
     {
-      entry: ["src/tokens/**/*.ts?(x)"],
+      entry: ["src/tokens/**/*.ts?(x)", "!./**/*.stories.*"],
       outDir: `${outDir}/tokens`,
       format: ["esm"],
       target: "es2015",
@@ -34,9 +34,8 @@ export default defineConfig((options: Options) => {
       dts: true,
       treeshake: true,
       minify: true,
-      ignoreWatch: ["**/*.stories.*"],
       clean: true,
-      external: ["*.stories.tsx", "react", "react-dom"]
+      ignoreWatch: ["**/*.stories.*"]
     }
   ];
 });
