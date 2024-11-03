@@ -1,4 +1,11 @@
-import { colors } from "@tokens/primitives";
+import {
+  colors,
+  border,
+  breakpoints,
+  opacity,
+  spacing,
+  size
+} from "@tokens/primitives";
 import { Theme } from "../types";
 
 export const baseTheme: Theme = {
@@ -110,5 +117,35 @@ export const baseTheme: Theme = {
         value: colors.orange[800]
       }
     }
-  }
+  },
+  border: {
+    width: {
+      none: border.width[0],
+      thin: border.width[1],
+      medium: border.width[2],
+      thick: border.width[4]
+    },
+    radius: {
+      none: border.radius[0],
+      small: border.radius[2],
+      medium: border.radius[4],
+      large: border.radius[8],
+      rounded: border.radius.rounded
+    },
+    style: {
+      solid: border.style.solid,
+      dashed: border.style.dashed,
+      dotted: border.style.dotted
+    }
+  },
+  opacity: {
+    none: opacity[0],
+    disabled: opacity[4],
+    loading: opacity[6],
+    hover: opacity[9]
+  },
+  // TODO: Create semantic size and spacing tokens like margin.sm, padding.lg etc.
+  size,
+  spacing,
+  screen: breakpoints
 };

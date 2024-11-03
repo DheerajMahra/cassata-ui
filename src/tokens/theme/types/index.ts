@@ -1,3 +1,9 @@
+import type {
+  BorderStyle,
+  Breakpoints,
+  Spacing,
+  Size
+} from "@tokens/primitives";
 import type { ExecutionContext } from "styled-components";
 
 type StyledProps<T = {}> = ExecutionContext & T;
@@ -52,6 +58,31 @@ type Theme = {
     icon: Record<IconEmphasis, TokenValue & Record<HoveredState, TokenValue>>;
     border: EmphasisTokenValueWithoutState & StatusTokenValue;
   };
+  border: {
+    width: {
+      none: string;
+      thin: string;
+      medium: string;
+      thick: string;
+    };
+    radius: {
+      none: string;
+      small: string;
+      medium: string;
+      large: string;
+      rounded: string;
+    };
+    style: BorderStyle;
+  };
+  opacity: {
+    none: number;
+    hover: number;
+    loading: number;
+    disabled: number;
+  };
+  spacing: Spacing;
+  screen: Breakpoints;
+  size: Size;
 };
 
 type ThemeName = "base";
