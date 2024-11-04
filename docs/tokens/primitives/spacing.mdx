@@ -1,0 +1,36 @@
+import { Meta } from "@storybook/addon-docs";
+import { spacing } from "../../../src/tokens/primitives";
+
+<Meta title="Tokens/Primitives/Spacing" />
+
+# Primitive Spacing Tokens
+
+Below is a list of all the spacing tokens available in our library:
+
+export const Table = () => {
+
+return (
+
+<table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
+  <thead>
+    <tr>
+      <th>Token Name</th>
+      <th>Raw Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    {Object.entries(spacing).map(([key, value]) => (
+      <tr key={value}>
+        <td>
+          <code>{`spacing.${key}`}</code>
+        </td>
+        <td>
+          <code>{value}</code>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+); };
+
+<Table />
