@@ -1,7 +1,7 @@
 import {
-  colors,
+  color,
   border,
-  breakpoints,
+  breakpoint,
   opacity,
   spacing,
   size
@@ -12,109 +12,109 @@ export const baseTheme: Theme = {
   color: {
     text: {
       primary: {
-        value: colors.slate[800],
-        hovered: { value: colors.slate[800] },
-        pressed: { value: colors.slate[800] },
-        focused: { value: colors.slate[800] },
-        disabled: { value: colors.slate[800] }
+        value: color.slate[800],
+        hovered: { value: color.slate[800] },
+        pressed: { value: color.slate[800] },
+        focused: { value: color.slate[800] },
+        disabled: { value: color.slate[800] }
       },
       secondary: {
-        value: colors.slate[600],
-        hovered: { value: colors.slate[600] },
-        pressed: { value: colors.slate[600] },
-        focused: { value: colors.slate[600] },
-        disabled: { value: colors.slate[600] }
+        value: color.slate[600],
+        hovered: { value: color.slate[600] },
+        pressed: { value: color.slate[600] },
+        focused: { value: color.slate[600] },
+        disabled: { value: color.slate[600] }
       },
       subdued: {
-        value: colors.slate[500],
-        hovered: { value: colors.slate[500] },
-        pressed: { value: colors.slate[500] },
-        focused: { value: colors.slate[500] },
-        disabled: { value: colors.slate[500] }
+        value: color.slate[500],
+        hovered: { value: color.slate[500] },
+        pressed: { value: color.slate[500] },
+        focused: { value: color.slate[500] },
+        disabled: { value: color.slate[500] }
       },
       inverse: {
-        value: colors.slate[200],
-        hovered: { value: colors.slate[200] },
-        pressed: { value: colors.slate[200] },
-        focused: { value: colors.slate[200] },
-        disabled: { value: colors.slate[200] }
+        value: color.slate[200],
+        hovered: { value: color.slate[200] },
+        pressed: { value: color.slate[200] },
+        focused: { value: color.slate[200] },
+        disabled: { value: color.slate[200] }
       },
-      success: { value: colors.green[600] },
-      critical: { value: colors.red[800] },
-      warning: { value: colors.orange[800] }
+      success: { value: color.green[600] },
+      critical: { value: color.red[800] },
+      warning: { value: color.orange[800] }
     },
     surface: {
       primary: {
-        value: colors.blue[600],
-        hovered: { value: colors.slate[800] },
-        pressed: { value: colors.slate[800] },
-        focused: { value: colors.slate[800] },
-        disabled: { value: colors.slate[800] }
+        value: color.blue[600],
+        hovered: { value: color.slate[800] },
+        pressed: { value: color.slate[800] },
+        focused: { value: color.slate[800] },
+        disabled: { value: color.slate[800] }
       },
       secondary: {
-        value: colors.white,
-        hovered: { value: colors.slate[800] },
-        pressed: { value: colors.slate[800] },
-        focused: { value: colors.slate[800] },
-        disabled: { value: colors.slate[800] }
+        value: color.white,
+        hovered: { value: color.slate[800] },
+        pressed: { value: color.slate[800] },
+        focused: { value: color.slate[800] },
+        disabled: { value: color.slate[800] }
       },
       subdued: {
-        value: colors.slate[100],
-        hovered: { value: colors.slate[800] },
-        pressed: { value: colors.slate[800] },
-        focused: { value: colors.slate[800] },
-        disabled: { value: colors.slate[800] }
+        value: color.slate[100],
+        hovered: { value: color.slate[800] },
+        pressed: { value: color.slate[800] },
+        focused: { value: color.slate[800] },
+        disabled: { value: color.slate[800] }
       },
       inverse: {
-        value: colors.slate[900],
-        hovered: { value: colors.slate[800] },
-        pressed: { value: colors.slate[800] },
-        focused: { value: colors.slate[800] },
-        disabled: { value: colors.slate[800] }
+        value: color.slate[900],
+        hovered: { value: color.slate[800] },
+        pressed: { value: color.slate[800] },
+        focused: { value: color.slate[800] },
+        disabled: { value: color.slate[800] }
       },
-      success: { value: colors.green[600] },
-      critical: { value: colors.red[600] },
-      warning: { value: colors.orange[600] }
+      success: { value: color.green[600] },
+      critical: { value: color.red[600] },
+      warning: { value: color.orange[600] }
     },
     background: {
-      primary: { value: colors.white },
-      subdued: { value: colors.slate[100] }
+      primary: { value: color.white },
+      subdued: { value: color.slate[100] }
     },
     icon: {
       primary: {
-        value: colors.slate[800],
-        hovered: { value: colors.slate[800] }
+        value: color.slate[800],
+        hovered: { value: color.slate[800] }
       },
       subdued: {
-        value: colors.slate[800],
-        hovered: { value: colors.slate[800] }
+        value: color.slate[800],
+        hovered: { value: color.slate[800] }
       },
       inverse: {
-        value: colors.slate[100],
-        hovered: { value: colors.slate[800] }
+        value: color.slate[100],
+        hovered: { value: color.slate[800] }
       }
     },
     border: {
       primary: {
-        value: colors.slate[800]
+        value: color.slate[800]
       },
       secondary: {
-        value: colors.slate[600]
+        value: color.slate[600]
       },
       subdued: {
-        value: colors.slate[500]
+        value: color.slate[500]
       },
       inverse: {
-        value: colors.slate[200]
+        value: color.slate[200]
       },
       success: {
-        value: colors.green[600]
+        value: color.green[600]
       },
       critical: {
-        value: colors.red[800]
+        value: color.red[800]
       },
       warning: {
-        value: colors.orange[800]
+        value: color.orange[800]
       }
     }
   },
@@ -147,5 +147,5 @@ export const baseTheme: Theme = {
   // TODO: Create semantic size and spacing tokens like margin.sm, padding.lg etc.
   size,
   spacing,
-  screen: breakpoints
+  screen: breakpoint
 };

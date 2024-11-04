@@ -1,4 +1,4 @@
-type Breakpoints = {
+type Breakpoint = {
   xs: string;
   sm: string;
   md: string;
@@ -6,7 +6,7 @@ type Breakpoints = {
   xl: string;
 };
 
-const breakpoints: Breakpoints = {
+const breakpoint: Breakpoint = {
   xs: "480px",
   sm: "600px",
   md: "768px",
@@ -14,5 +14,5 @@ const breakpoints: Breakpoints = {
   xl: "1280px"
 };
 
-export { breakpoints };
-export type { Breakpoints };
+export { breakpoint };
+export type { Breakpoint };

@@ -11,7 +11,7 @@ type ColorScale = Readonly<{
   900: string;
 }>;
 
-type Colors = Readonly<{
+type Color = Readonly<{
   white: string;
   black: string;
   grey: ColorScale;
@@ -22,7 +22,7 @@ type Colors = Readonly<{
   green: ColorScale;
 }>;
 
-const colors: Colors = {
+const color: Color = {
   white: "#FFFFFF",
   black: "#000000",
   grey: {
@@ -99,4 +99,4 @@ const colors: Colors = {
   }
 };
 
-export { colors };
+export { color };

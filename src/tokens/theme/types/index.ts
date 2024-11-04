@@ -1,6 +1,6 @@
 import type {
   BorderStyle,
-  Breakpoints,
+  Breakpoint,
   Spacing,
   Size
 } from "@tokens/primitives";
@@ -81,7 +81,7 @@ type Theme = {
     disabled: number;
   };
   spacing: Spacing;
-  screen: Breakpoints;
+  screen: Breakpoint;
   size: Size;
 };
 
