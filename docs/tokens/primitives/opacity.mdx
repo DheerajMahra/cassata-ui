@@ -1,5 +1,5 @@
 import { Meta } from "@storybook/addon-docs";
-import { opacity } from "../../../src/tokens/primitives";
+import { OpacityTable } from "./components";
 
 <Meta title="Tokens/Primitives/Opacity" />
 
@@ -7,30 +7,4 @@ import { opacity } from "../../../src/tokens/primitives";
 
 Below is a list of all the opacity tokens available in our library:
 
-export const Table = () => {
-
-return (
-
-<table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
-  <thead>
-    <tr>
-      <th>Token Name</th>
-      <th>Raw Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    {Object.entries(opacity).map(([key, value]) => (
-      <tr key={value}>
-        <td>
-          <code>{`opacity.${key}`}</code>
-        </td>
-        <td>
-          <code>{value}</code>
-        </td>
-      </tr>
-    ))}
-  </tbody>
-</table>
-); };
-
-<Table />
+<OpacityTable />

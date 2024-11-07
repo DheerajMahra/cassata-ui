@@ -1,0 +1,31 @@
+import { Meta } from "@storybook/addon-docs";
+import { useMemo } from "react";
+import { getThemeSemanticTokens } from "../../../src/tokens/theme";
+import { color } from "../../../src/tokens";
+import { ColorTable, BorderTable, OpacityTable } from "./components";
+
+<Meta title="Tokens/Theme/Base" />
+
+# Theme
+
+When you wrap your app in`<ThemeProvider />`, all styled components in your app get a `theme` prop having semantic tokens in it.
+
+Below is a list of all semantic tokens available in our library:
+
+[Color Semantic Tokens](#color-semantic-tokens)
+
+[Border Semantic Tokens](#border-semantic-tokens)
+
+[Opactiy Semantic Tokens](#opacity-semantic-tokens)
+
+### Color Semantic Tokens
+
+<ColorTable />
+
+### Border Semantic Tokens
+
+<BorderTable />
+
+### Opacity Semantic Tokens
+
+<OpacityTable />
