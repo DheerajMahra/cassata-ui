@@ -147,5 +147,5 @@ export const baseTheme: Theme = {
   // TODO: Create semantic size and spacing tokens like margin.sm, padding.lg etc.
   size,
   spacing,
-  screen: breakpoint
+  breakpoint
 };

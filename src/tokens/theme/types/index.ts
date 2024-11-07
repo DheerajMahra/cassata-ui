@@ -81,7 +81,7 @@ type Theme = {
     disabled: number;
   };
   spacing: Spacing;
-  screen: Breakpoint;
+  breakpoint: Breakpoint;
   size: Size;
 };
 
