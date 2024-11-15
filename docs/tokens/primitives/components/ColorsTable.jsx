@@ -6,17 +6,12 @@ export const ColorsTable = () => {
     if (typeof value === "string") {
       return [[key, value]];
     } else {
-      return Object.entries(value).map(([shade, colorValue]) => [
-        `${key}.${shade}`,
-        colorValue
-      ]);
+      return Object.entries(value).map(([shade, colorValue]) => [`${key}.${shade}`, colorValue]);
     }
   });
 
   return (
-    <table
-      style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}
-    >
+    <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
       <thead>
         <tr>
           <th>Token Name</th>
@@ -34,11 +29,7 @@ export const ColorsTable = () => {
               <code>{colorValue}</code>
             </td>
             <td>
-              <input
-                style={{ width: "100%" }}
-                type="color"
-                value={colorValue}
-              />
+              <input style={{ width: "100%" }} type="color" value={colorValue} />
             </td>
           </tr>
         ))}

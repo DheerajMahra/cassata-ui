@@ -45,9 +45,7 @@ export const BorderTable = () => {
   const flattenedTokens = flattenTokens(theme.border);
 
   return (
-    <table
-      style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}
-    >
+    <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
       <thead>
         <tr>
           <th>Semantic Token Name</th>

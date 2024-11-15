@@ -1,9 +1,4 @@
-import type {
-  BorderStyle,
-  Breakpoint,
-  Spacing,
-  Size
-} from "@tokens/primitives";
+import type { BorderStyle, Breakpoint, Spacing, Size } from "@tokens/primitives";
 import type { ExecutionContext } from "styled-components";
 
 type StyledProps<T = {}> = ExecutionContext & T;

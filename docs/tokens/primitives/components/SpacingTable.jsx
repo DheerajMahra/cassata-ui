@@ -3,9 +3,7 @@ import { spacing } from "../../../../src/tokens/primitives";
 
 export const SpacingTable = () => {
   return (
-    <table
-      style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}
-    >
+    <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
       <thead>
         <tr>
           <th>Token Name</th>

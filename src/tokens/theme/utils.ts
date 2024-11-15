@@ -5,5 +5,4 @@ const themes: Themes = {
   base: baseTheme
 };
 
-export const getThemeSemanticTokens = (themeName: ThemeName) =>
-  themes[themeName];
+export const getThemeSemanticTokens = (themeName: ThemeName) => themes[themeName];

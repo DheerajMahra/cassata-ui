@@ -1,11 +1,4 @@
-import {
-  color,
-  border,
-  breakpoint,
-  opacity,
-  spacing,
-  size
-} from "@tokens/primitives";
+import { color, border, breakpoint, opacity, spacing, size } from "@tokens/primitives";
 import { Theme } from "../types";
 
 export const baseTheme: Theme = {

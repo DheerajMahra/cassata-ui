@@ -44,9 +44,7 @@ export const ColorTable = () => {
   const flattenedTokens = flattenTokens(theme.color);
 
   return (
-    <table
-      style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}
-    >
+    <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
       <thead>
         <tr>
           <th>Semantic Token Name</th>

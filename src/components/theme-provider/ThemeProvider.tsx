@@ -1,8 +1,5 @@
 import React, { useMemo } from "react";
-import {
-  ThemeProvider as StyledThemeProvider,
-  useTheme
-} from "styled-components";
+import { ThemeProvider as StyledThemeProvider, useTheme } from "styled-components";
 import { getThemeSemanticTokens } from "@tokens/theme";
 import type { ThemeName } from "@tokens/theme";
 

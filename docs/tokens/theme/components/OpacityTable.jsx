@@ -23,9 +23,7 @@ export const OpacityTable = () => {
   const theme = getThemeSemanticTokens("base");
 
   return (
-    <table
-      style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}
-    >
+    <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
       <thead>
         <tr>
           <th>Semantic Token Name</th>
